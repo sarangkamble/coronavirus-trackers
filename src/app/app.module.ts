@@ -8,10 +8,12 @@ import { NavbarComponent } from './components/navbar/navbar.component';
 import { ReportComponent } from './components/report/report.component';
 import { UpdateComponent } from './components/update/update.component';
 import { ErrorComponent } from './components/error/error.component';
+import { DataService } from './services/data.service';
 
 @NgModule({
   imports:      [ BrowserModule, FormsModule, NgbModule ],
   declarations: [ AppComponent, NavbarComponent, ReportComponent, UpdateComponent, ErrorComponent ],
-  bootstrap:    [ AppComponent ]
+  bootstrap:    [ AppComponent ],
+  providers: [DataService]
 })
 export class AppModule { }
