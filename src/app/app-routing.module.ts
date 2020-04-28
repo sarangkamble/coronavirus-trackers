@@ -6,9 +6,9 @@ import { ErrorComponent } from './components/error/error.component';
 
 
 const routes: Routes = [
-  {path:'',component:ReportComponent},
-  {path:'report',component:ReportComponent},
-  {path:'update',component:UpdateComponent},
+  {path:"",component:ReportComponent},
+  {path:"report",component:ReportComponent},
+  {path:"update",component:UpdateComponent},
   
   {path:'**',component:ErrorComponent}
 ];

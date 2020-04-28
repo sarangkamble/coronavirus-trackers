@@ -1,3 +1,20 @@
-<p>
-report works!
-</p>
+<table class="table table-bordered">
+    <thead>
+        <tr>
+            <th>Country</th>
+            <th>Confirmed</th>
+            <th>Deaths</th>
+            <th>Recovered</th>
+            <th>Active</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let report of reports">
+            <td>{{report.country}}</td>
+            <td>{{report.confirmed}}</td>
+            <td>{{report.deaths}}</td>
+            <td>{{report.recovered}}</td>
+            <td>{{report.active}}</td>
+        </tr>
+    </tbody>
+</table>

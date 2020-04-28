@@ -12,11 +12,11 @@ export class ReportComponent implements OnInit {
   reports : any;
   i:number= 1;
 
-  constructor(private http:HttpClient, private dataService:DataService) { }
+  constructor(/*private http:HttpClient, private dataService:DataService*/) { }
 
   ngOnInit() {
-    let resp = this.dataService.getGlobalData();
-    resp.subscribe((data)=>this.reports=data);
+   // let resp = this.dataService.getGlobalData();
+    //resp.subscribe((data)=>this.reports=data);
   }
 
 }
